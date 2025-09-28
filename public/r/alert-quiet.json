@@ -11,7 +11,7 @@
     {
       "type": "registry:component",
       "content": "import { Info } from \"lucide-react\"\r\n\r\nexport default function AlertQuiet() {\r\n  return (\r\n    <div className=\"w-full max-w-xl mx-auto\">\r\n      <div role=\"status\" className=\"rounded-lg border border-border/60 bg-background p-3\">\r\n        <div className=\"flex items-center gap-2\">\r\n          <Info className=\"h-4 w-4 text-muted-foreground\" aria-hidden=\"true\" />\r\n          <span className=\"text-sm\">Beta features are experimental.</span>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  )\r\n}\r\n",
-      "path": "/components/workable/alert/alert-quiet.tsx",
+      "path": "alert-quiet.tsx",
       "target": "/components/workable/alert-quiet.tsx"
     }
   ]

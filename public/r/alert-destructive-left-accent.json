@@ -11,7 +11,7 @@
     {
       "type": "registry:component",
       "content": "import { XCircle } from \"lucide-react\"\r\n\r\nexport default function AlertDestructiveLeftAccent() {\r\n  return (\r\n    <div className=\"w-full max-w-xl mx-auto\">\r\n      <div\r\n        role=\"alert\"\r\n        aria-live=\"assertive\"\r\n        className=\"relative bg-card text-card-foreground border border-destructive/40 rounded-xl p-4 pl-5\"\r\n      >\r\n        <div className=\"absolute left-0 top-0 h-full w-1.5 rounded-l-xl bg-destructive\" aria-hidden=\"true\" />\r\n        <div className=\"flex gap-3 items-start\">\r\n          <div className=\"p-2 rounded-full bg-background\">\r\n            <XCircle className=\"h-6 w-6 text-destructive\" aria-hidden=\"true\" />\r\n          </div>\r\n          <div className=\"space-y-0.5\">\r\n            <h3 className=\"text-sm font-medium\">Payment failed</h3>\r\n            <p className=\"text-[13px] text-muted-foreground\">\r\n              Please update your billing information to restore service.\r\n            </p>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  )\r\n}\r\n",
-      "path": "/components/workable/alert/alert-destructive-left-accent.tsx",
+      "path": "alert-destructive-left-accent.tsx",
       "target": "/components/workable/alert-destructive-left-accent.tsx"
     }
   ]

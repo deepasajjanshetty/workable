@@ -12,7 +12,7 @@
     {
       "type": "registry:component",
       "content": "import { User, Info } from \"lucide-react\"\r\n\r\nexport default function AlertWithAvatar() {\r\n  return (\r\n    <div className=\"w-full max-w-xl mx-auto\">\r\n      <div role=\"status\" className=\"relative bg-card text-card-foreground border border-border rounded-xl p-4\">\r\n        <div className=\"flex gap-3 items-start\">\r\n          <div className=\"p-2 rounded-full bg-background\">\r\n            <User className=\"h-6 w-6 text-muted-foreground\" aria-hidden=\"true\" />\r\n            <span className=\"sr-only\">User notice</span>\r\n          </div>\r\n          <div className=\"space-y-0.5\">\r\n            <h3 className=\"text-sm font-medium\">Welcome back, Jamie</h3>\r\n            <p className=\"text-[13px] text-muted-foreground\">We added new features to your workspace.</p>\r\n            <div className=\"flex items-center gap-2 text-xs text-muted-foreground\">\r\n              <Info className=\"h-3.5 w-3.5\" aria-hidden=\"true\" />\r\n              <span>Check the changelog for details.</span>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  )\r\n}\r\n",
-      "path": "/components/workable/alert/alert-with-avatar.tsx",
+      "path": "alert-with-avatar.tsx",
       "target": "/components/workable/alert-with-avatar.tsx"
     }
   ]

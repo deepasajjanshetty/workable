@@ -11,7 +11,7 @@
     {
       "type": "registry:component",
       "content": "import { ExternalLink, Info } from \"lucide-react\"\r\n\r\nexport default function AlertWithLink() {\r\n  return (\r\n    <div className=\"w-full max-w-xl mx-auto\">\r\n      <div role=\"status\" className=\"relative bg-card text-card-foreground border border-border rounded-xl p-4\">\r\n        <div className=\"flex gap-3 items-start\">\r\n          <div className=\"p-2 rounded-full bg-background\">\r\n            <Info className=\"h-6 w-6 text-primary\" aria-hidden=\"true\" />\r\n            <span className=\"sr-only\">Information</span>\r\n          </div>\r\n          <div className=\"space-y-1\">\r\n            <h3 className=\"text-sm font-medium\">We&rsquo;ve updated our terms</h3>\r\n            <p className=\"text-[13px] text-muted-foreground\">\r\n              Please review the changes in our{\" \"}\r\n              <a\r\n                href=\"#\"\r\n                className=\"underline underline-offset-4 text-primary\"\r\n                aria-label=\"Read updated Terms of Service\"\r\n              >\r\n                Terms of Service\r\n              </a>\r\n              .\r\n            </p>\r\n            <a href=\"#\" className=\"inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground\">\r\n              Learn more <ExternalLink className=\"h-3.5 w-3.5\" aria-hidden=\"true\" />\r\n            </a>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  )\r\n}\r\n",
-      "path": "/components/workable/alert/alert-with-link.tsx",
+      "path": "alert-with-link.tsx",
       "target": "/components/workable/alert-with-link.tsx"
     }
   ]

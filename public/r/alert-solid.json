@@ -11,7 +11,7 @@
     {
       "type": "registry:component",
       "content": "import { Info } from \"lucide-react\"\r\n\r\nexport default function AlertSolid() {\r\n  return (\r\n    <div className=\"w-full max-w-xl mx-auto\">\r\n      <div role=\"status\" className=\"relative bg-primary text-primary-foreground rounded-xl p-4\">\r\n        <div className=\"flex gap-3 items-start\">\r\n          <div className=\"p-2 rounded-full bg-primary/20\">\r\n            <Info className=\"h-6 w-6\" aria-hidden=\"true\" />\r\n            <span className=\"sr-only\">Information</span>\r\n          </div>\r\n          <div className=\"space-y-0.5\">\r\n            <h3 className=\"text-sm font-medium\">Invite sent</h3>\r\n            <p className=\"text-[13px] opacity-90\">We emailed an invite to alex@example.com.</p>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  )\r\n}\r\n",
-      "path": "/components/workable/alert/alert-solid.tsx",
+      "path": "alert-solid.tsx",
       "target": "/components/workable/alert-solid.tsx"
     }
   ]

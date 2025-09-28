@@ -11,7 +11,7 @@
     {
       "type": "registry:component",
       "content": "import { Info } from \"lucide-react\"\r\n\r\nexport default function AlertMultiLine() {\r\n  return (\r\n    <div className=\"w-full max-w-xl mx-auto\">\r\n      <div role=\"status\" className=\"relative bg-card text-card-foreground border border-border rounded-xl p-4\">\r\n        <div className=\"flex gap-3 items-start\">\r\n          <div className=\"p-2 rounded-full bg-background\">\r\n            <Info className=\"h-6 w-6 text-primary\" aria-hidden=\"true\" />\r\n            <span className=\"sr-only\">Information</span>\r\n          </div>\r\n          <div className=\"space-y-2\">\r\n            <h3 className=\"text-sm font-medium\">Service notice</h3>\r\n            <p className=\"text-[13px] text-muted-foreground\">\r\n              We&rsquo;re performing scheduled maintenance on Saturday between 01:00 and 03:00 UTC.\r\n            </p>\r\n            <p className=\"text-[13px] text-muted-foreground\">\r\n              During this window, some features may be slow or temporarily unavailable. We appreciate your patience and\r\n              will restore full service as quickly as possible.\r\n            </p>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  )\r\n}\r\n",
-      "path": "/components/workable/alert/alert-multi-line.tsx",
+      "path": "alert-multi-line.tsx",
       "target": "/components/workable/alert-multi-line.tsx"
     }
   ]

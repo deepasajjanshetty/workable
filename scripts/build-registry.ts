@@ -47,7 +47,7 @@ const getComponentFiles = async (files: File[], registryType: string) => {
             return {
                 type: registryType,
                 content: fileContent,
-                path: normalizedPath,
+                path: fileName, // Use only filename, not full path
                 target: `/components/workable/${fileName}`,
             };
         }
@@ -77,7 +77,7 @@ const getComponentFiles = async (files: File[], registryType: string) => {
         return {
             type: fileType,
             content: fileContent,
-            path: normalizedPath,
+            path: fileName, // Use only filename, not full path
             target: typeof file === 'string' ? getTargetPath(registryType) : (file.target || getTargetPath(fileType)),
         };
     });
