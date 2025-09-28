@@ -5,9 +5,11 @@ const prePath = process.env.VERCEL_PROJECT_PRODUCTION_URL
     ? process.env.VERCEL_PROJECT_PRODUCTION_URL.startsWith('https://') 
         ? process.env.VERCEL_PROJECT_PRODUCTION_URL
         : `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-    : process.env.NEXT_PUBLIC_SITE_URL?.startsWith('https://')
-        ? process.env.NEXT_PUBLIC_SITE_URL
-        : `https://${process.env.NEXT_PUBLIC_SITE_URL}`;
+    : process.env.NEXT_PUBLIC_SITE_URL
+        ? process.env.NEXT_PUBLIC_SITE_URL.startsWith('https://')
+            ? process.env.NEXT_PUBLIC_SITE_URL
+            : `https://${process.env.NEXT_PUBLIC_SITE_URL}`
+        : "https://workableui.vercel.app";
 
 export function OpenInV0Button({
     name,
@@ -26,6 +28,10 @@ export function OpenInV0Button({
                 href={`https://v0.dev/chat/api/open?url=${prePath}/r/${name}.json`}
                 target="_blank"
                 rel="noreferrer"
+                onClick={() => {
+                    console.log('Opening in v0:', `${prePath}/r/${name}.json`);
+                    console.log('Full URL:', `https://v0.dev/chat/api/open?url=${prePath}/r/${name}.json`);
+                }}
             >
                 Open in{" "}
                 <svg

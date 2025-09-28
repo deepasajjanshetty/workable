@@ -17,7 +17,7 @@ const prePath = process.env.VERCEL_PROJECT_PRODUCTION_URL
   ? process.env.VERCEL_PROJECT_PRODUCTION_URL.startsWith('https://') 
       ? process.env.VERCEL_PROJECT_PRODUCTION_URL
       : `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-  : "https://workable-ui.vercel.app";
+  : "https://workableui.vercel.app";
 
 export function Preview({
   children,

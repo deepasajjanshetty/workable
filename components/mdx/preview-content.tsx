@@ -54,14 +54,20 @@ export default function PreviewContent({
 
     const handleTerminalClick = () => {
         const [folder, filename] = link.split("/");
-        const COPY = `npx shadcn@latest add ${prePath}/r/${
-            filename ? filename : folder
-        }.json`;
-        navigator.clipboard.writeText(COPY);
-        setIsTerminalCopied(true);
-        setTimeout(() => {
-            setIsTerminalCopied(false);
-        }, 1000);
+        const componentName = filename ? filename : folder;
+        const COPY = `npx shadcn@latest add ${prePath}/r/${componentName}.json`;
+        
+        console.log('Copying command:', COPY);
+        console.log('prePath:', prePath);
+        
+        navigator.clipboard.writeText(COPY).then(() => {
+            setIsTerminalCopied(true);
+            setTimeout(() => {
+                setIsTerminalCopied(false);
+            }, 2000);
+        }).catch((err) => {
+            console.error('Failed to copy: ', err);
+        });
     };
 
     const openInV0 = () => {
