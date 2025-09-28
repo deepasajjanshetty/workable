@@ -219,7 +219,7 @@ export default function TemplatesPage() {
             </div>
             <div className="p-6 border border-gray-200 dark:border-gray-800 rounded-lg">
               <h3 className="text-lg font-semibold mb-4">Animated Text</h3>
-              <Text02 />
+              <Text02 text="Animated Text" />
             </div>
             <div className="p-6 border border-gray-200 dark:border-gray-800 rounded-lg">
               <h3 className="text-lg font-semibold mb-4">Gradient Text</h3>
