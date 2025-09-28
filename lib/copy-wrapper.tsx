@@ -12,15 +12,7 @@ interface CopyWrapperProps {
     setShowCode: (show: boolean) => void;
 }
 
-const prePath = process.env.VERCEL_PROJECT_PRODUCTION_URL
-    ? process.env.VERCEL_PROJECT_PRODUCTION_URL.startsWith('https://') 
-        ? process.env.VERCEL_PROJECT_PRODUCTION_URL
-        : `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-    : process.env.NEXT_PUBLIC_SITE_URL
-        ? process.env.NEXT_PUBLIC_SITE_URL.startsWith('https://')
-            ? process.env.NEXT_PUBLIC_SITE_URL
-            : `https://${process.env.NEXT_PUBLIC_SITE_URL}`
-        : "https://workableui.vercel.app";
+const prePath = "https://workableui.vercel.app";
 
 export function CopyWrapper({
     fileName,
