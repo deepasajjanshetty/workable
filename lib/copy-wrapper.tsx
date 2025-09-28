@@ -13,8 +13,12 @@ interface CopyWrapperProps {
 }
 
 const prePath = process.env.VERCEL_PROJECT_PRODUCTION_URL
-    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-    : `https://${process.env.NEXT_PUBLIC_SITE_URL}`;
+    ? process.env.VERCEL_PROJECT_PRODUCTION_URL.startsWith('https://') 
+        ? process.env.VERCEL_PROJECT_PRODUCTION_URL
+        : `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+    : process.env.NEXT_PUBLIC_SITE_URL?.startsWith('https://')
+        ? process.env.NEXT_PUBLIC_SITE_URL
+        : `https://${process.env.NEXT_PUBLIC_SITE_URL}`;
 
 export function CopyWrapper({
     fileName,
@@ -35,7 +39,7 @@ export function CopyWrapper({
     const handleCLI = () => {
         console.log(prePath);
         copyToClipboard(
-            `bunx shadcn@latest add ${prePath}/r/${fileName?.replace(
+            `npx shadcn@latest add ${prePath}/r/${fileName?.replace(
                 ".tsx",
                 ".json"
             )}`

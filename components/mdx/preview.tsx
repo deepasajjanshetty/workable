@@ -14,8 +14,10 @@ interface PreviewProps {
 }
 
 const prePath = process.env.VERCEL_PROJECT_PRODUCTION_URL
-  ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-  : "https://ui.workable.dev";
+  ? process.env.VERCEL_PROJECT_PRODUCTION_URL.startsWith('https://') 
+      ? process.env.VERCEL_PROJECT_PRODUCTION_URL
+      : `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+  : "https://workable-ui.vercel.app";
 
 export function Preview({
   children,

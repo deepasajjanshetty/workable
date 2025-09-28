@@ -2,8 +2,12 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 const prePath = process.env.VERCEL_PROJECT_PRODUCTION_URL
-    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-    : `https://${process.env.NEXT_PUBLIC_SITE_URL}`;
+    ? process.env.VERCEL_PROJECT_PRODUCTION_URL.startsWith('https://') 
+        ? process.env.VERCEL_PROJECT_PRODUCTION_URL
+        : `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+    : process.env.NEXT_PUBLIC_SITE_URL?.startsWith('https://')
+        ? process.env.NEXT_PUBLIC_SITE_URL
+        : `https://${process.env.NEXT_PUBLIC_SITE_URL}`;
 
 export function OpenInV0Button({
     name,
