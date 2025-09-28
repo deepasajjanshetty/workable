@@ -73,22 +73,21 @@ export function Header() {
                       >
                         Components
                       </ViewTransitionsLink>
-                      {/* <ViewTransitionsLink
-                                              href="/pricing"
-                                              className="text-sm text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100 transition-colors"
-                                          >
-                                              Pricing
-                                          </ViewTransitionsLink> */}
-                      <Link
-                        href="https://workableui.pro/templates?utm_source=workableui.com&utm_medium=header"
-                        target="_blank"
+                      <ViewTransitionsLink
+                        href="/pricing"
+                        className="text-sm text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100 transition-colors"
+                      >
+                        Pricing
+                      </ViewTransitionsLink>
+                      <ViewTransitionsLink
+                        href="/templates"
                         className="text-sm text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100 transition-colors flex items-center gap-2"
                       >
                         Templates
                         <span className="text-green-500 dark:text-green-400 border border-green-500 dark:border-green-400 rounded-lg px-1 py-0.5 text-xs">
                           New
                         </span>
-                      </Link>
+                      </ViewTransitionsLink>
                     </div>
                   </div>
   
@@ -106,6 +105,12 @@ export function Header() {
                       className="text-sm text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100 transition-colors"
                     >
                       Components
+                    </ViewTransitionsLink>
+                    <ViewTransitionsLink
+                      href="/templates"
+                      className="text-sm text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100 transition-colors"
+                    >
+                      Templates
                     </ViewTransitionsLink>
                     <ViewTransitionsLink
                       href="/pricing"
