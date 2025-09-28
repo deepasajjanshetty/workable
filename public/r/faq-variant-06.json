@@ -1,0 +1,18 @@
+{
+  "name": "faq-variant-06",
+  "type": "registry:component",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "accordion"
+  ],
+  "files": [
+    {
+      "type": "registry:component",
+      "content": "\"use client\"\r\n\r\nimport { useState } from \"react\"\r\nimport { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from \"@/components/ui/accordion\"\r\nimport { Button } from \"@/components/ui/button\"\r\nimport { FAQ_ITEMS } from \"./faq-data\"\r\n\r\nfunction Helpful({ id }: { id: string }) {\r\n  const [state, setState] = useState<\"idle\" | \"yes\" | \"no\">(\"idle\")\r\n  if (state !== \"idle\") {\r\n    return <p className=\"text-sm text-muted-foreground\">Thanks for your feedback!</p>\r\n  }\r\n  return (\r\n    <div className=\"flex items-center gap-2\">\r\n      <span className=\"text-sm text-muted-foreground\">Was this helpful?</span>\r\n      <Button variant=\"outline\" size=\"sm\" onClick={() => setState(\"yes\")}>\r\n        Yes\r\n      </Button>\r\n      <Button variant=\"outline\" size=\"sm\" onClick={() => setState(\"no\")}>\r\n        No\r\n      </Button>\r\n    </div>\r\n  )\r\n}\r\n\r\nexport default function FAQVariant06() {\r\n  return (\r\n    <section className=\"py-10\">\r\n      <h2 className=\"text-2xl font-semibold text-foreground mb-4\">FAQ with Feedback</h2>\r\n      <Accordion type=\"single\" collapsible className=\"space-y-3\">\r\n        {FAQ_ITEMS.map((faq) => (\r\n          <AccordionItem key={faq.id} value={faq.id} className=\"rounded-md border border-border bg-card\">\r\n            <AccordionTrigger className=\"px-4 py-3\">{faq.question}</AccordionTrigger>\r\n            <AccordionContent className=\"px-4 pb-4 text-muted-foreground\">\r\n              <p className=\"mb-3\">{faq.answer}</p>\r\n              <Helpful id={faq.id} />\r\n            </AccordionContent>\r\n          </AccordionItem>\r\n        ))}\r\n      </Accordion>\r\n    </section>\r\n  )\r\n}\r\n",
+      "path": "/components/workable/faq/faq-variant-06.tsx",
+      "target": "/components/workable/faq-variant-06.tsx"
+    }
+  ]
+}

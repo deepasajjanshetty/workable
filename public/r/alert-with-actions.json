@@ -1,0 +1,19 @@
+{
+  "name": "alert-with-actions",
+  "type": "registry:component",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "alert",
+    "button"
+  ],
+  "files": [
+    {
+      "type": "registry:component",
+      "content": "import { Info } from \"lucide-react\"\r\n\r\nexport default function AlertWithActions() {\r\n  return (\r\n    <div className=\"w-full max-w-xl mx-auto\">\r\n      <div role=\"status\" className=\"relative bg-card text-card-foreground border border-border rounded-xl p-4\">\r\n        <div className=\"flex items-start justify-between gap-4\">\r\n          <div className=\"flex gap-3\">\r\n            <div className=\"p-2 rounded-full bg-background\">\r\n              <Info className=\"h-6 w-6 text-primary\" aria-hidden=\"true\" />\r\n              <span className=\"sr-only\">Information</span>\r\n            </div>\r\n            <div className=\"space-y-0.5\">\r\n              <h3 className=\"text-sm font-medium\">Profile incomplete</h3>\r\n              <p className=\"text-[13px] text-muted-foreground\">Add your phone number to secure your account.</p>\r\n            </div>\r\n          </div>\r\n          <div className=\"flex gap-2\">\r\n            <button className=\"px-3 py-1.5 text-xs rounded-md bg-muted text-foreground\">Later</button>\r\n            <button className=\"px-3 py-1.5 text-xs rounded-md bg-primary text-primary-foreground\">Complete now</button>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  )\r\n}\r\n",
+      "path": "/components/workable/alert/alert-with-actions.tsx",
+      "target": "/components/workable/alert-with-actions.tsx"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "faq-variant-03",
+  "type": "registry:component",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "accordion"
+  ],
+  "files": [
+    {
+      "type": "registry:component",
+      "content": "\"use client\"\r\n\r\nimport { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from \"@/components/ui/accordion\"\r\nimport { FAQ_ITEMS } from \"./faq-data\"\r\n\r\nexport default function FAQVariant03() {\r\n  return (\r\n    <section className=\"py-10\">\r\n      <div className=\"space-y-2\">\r\n        <h2 className=\"text-2xl font-semibold text-foreground\">FAQ (Minimal)</h2>\r\n        <p className=\"text-muted-foreground\">Quick answers at a glance.</p>\r\n      </div>\r\n      <Accordion\r\n        type=\"single\"\r\n        collapsible\r\n        className=\"mt-6 divide-y divide-border rounded-md border border-border bg-card\"\r\n      >\r\n        {FAQ_ITEMS.map((faq) => (\r\n          <AccordionItem key={faq.id} value={faq.id} className=\"px-4\">\r\n            <AccordionTrigger className=\"py-4 text-left\">{faq.question}</AccordionTrigger>\r\n            <AccordionContent className=\"pb-4 text-muted-foreground\">{faq.answer}</AccordionContent>\r\n          </AccordionItem>\r\n        ))}\r\n      </Accordion>\r\n    </section>\r\n  )\r\n}\r\n",
+      "path": "/components/workable/faq/faq-variant-03.tsx",
+      "target": "/components/workable/faq-variant-03.tsx"
+    }
+  ]
+}

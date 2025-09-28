@@ -1,0 +1,18 @@
+{
+  "name": "alert-banner",
+  "type": "registry:component",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "alert"
+  ],
+  "files": [
+    {
+      "type": "registry:component",
+      "content": "import { Megaphone } from \"lucide-react\"\r\n\r\nexport default function AlertBanner() {\r\n  return (\r\n    <div className=\"w-full\">\r\n      <div role=\"status\" className=\"bg-muted text-foreground border-b border-border\">\r\n        <div className=\"max-w-screen-xl mx-auto px-4 py-3\">\r\n          <div className=\"flex items-center gap-2\">\r\n            <Megaphone className=\"h-4 w-4 text-muted-foreground\" aria-hidden=\"true\" />\r\n            <p className=\"text-sm\">We&rsquo;ve launched new regions. Deploy closer to your users for lower latency.</p>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  )\r\n}\r\n",
+      "path": "/components/workable/alert/alert-banner.tsx",
+      "target": "/components/workable/alert-banner.tsx"
+    }
+  ]
+}

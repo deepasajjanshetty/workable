@@ -1,0 +1,18 @@
+{
+  "name": "alert-dismissible",
+  "type": "registry:component",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "alert"
+  ],
+  "files": [
+    {
+      "type": "registry:component",
+      "content": "\"use client\"\r\n\r\nimport { Info, X } from \"lucide-react\"\r\nimport { useState } from \"react\"\r\n\r\nexport default function AlertDismissible() {\r\n  const [open, setOpen] = useState(true)\r\n  if (!open) return null\r\n\r\n  return (\r\n    <div className=\"w-full max-w-xl mx-auto\">\r\n      <div role=\"status\" className=\"relative bg-card text-card-foreground border border-border rounded-xl p-4\">\r\n        <div className=\"flex items-start justify-between gap-4\">\r\n          <div className=\"flex gap-3\">\r\n            <div className=\"p-2 rounded-full bg-background\">\r\n              <Info className=\"h-6 w-6 text-primary\" aria-hidden=\"true\" />\r\n              <span className=\"sr-only\">Information</span>\r\n            </div>\r\n            <div className=\"space-y-0.5\">\r\n              <h3 className=\"text-sm font-medium\">Tips enabled</h3>\r\n              <p className=\"text-[13px] text-muted-foreground\">You can turn off product tips in settings.</p>\r\n            </div>\r\n          </div>\r\n          <button onClick={() => setOpen(false)} className=\"p-1 rounded-md hover:bg-muted\" aria-label=\"Dismiss alert\">\r\n            <X className=\"h-4 w-4 text-muted-foreground\" aria-hidden=\"true\" />\r\n          </button>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  )\r\n}\r\n",
+      "path": "/components/workable/alert/alert-dismissible.tsx",
+      "target": "/components/workable/alert-dismissible.tsx"
+    }
+  ]
+}

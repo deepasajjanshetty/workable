@@ -1,0 +1,18 @@
+{
+  "name": "alert-inset",
+  "type": "registry:component",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "alert"
+  ],
+  "files": [
+    {
+      "type": "registry:component",
+      "content": "import { Shield } from \"lucide-react\"\r\n\r\nexport default function AlertInset() {\r\n  return (\r\n    <div className=\"w-full max-w-xl mx-auto\">\r\n      <div className=\"bg-card text-card-foreground border border-border rounded-xl p-0 overflow-hidden\">\r\n        <div className=\"px-4 py-3 bg-muted/50 border-b border-border flex items-center gap-2\">\r\n          <Shield className=\"h-4 w-4 text-muted-foreground\" aria-hidden=\"true\" />\r\n          <span className=\"text-sm font-medium\">Security</span>\r\n        </div>\r\n        <div role=\"status\" className=\"px-4 py-4\">\r\n          <p className=\"text-[13px] text-muted-foreground\">\r\n            We&rsquo;ve detected unusual activity. Review your recent logins.\r\n          </p>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  )\r\n}\r\n",
+      "path": "/components/workable/alert/alert-inset.tsx",
+      "target": "/components/workable/alert-inset.tsx"
+    }
+  ]
+}

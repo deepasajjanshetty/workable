@@ -1,0 +1,18 @@
+{
+  "name": "alert-left-accent",
+  "type": "registry:component",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "alert"
+  ],
+  "files": [
+    {
+      "type": "registry:component",
+      "content": "import { Info } from \"lucide-react\"\r\n\r\nexport default function AlertLeftAccent() {\r\n  return (\r\n    <div className=\"w-full max-w-xl mx-auto\">\r\n      <div\r\n        role=\"status\"\r\n        className=\"relative bg-card text-card-foreground border border-border rounded-xl p-4 pl-5\"\r\n        style={{ boxShadow: \"0 1px 6px 0 rgba(0,0,0,0.04)\" }}\r\n      >\r\n        <div className=\"absolute left-0 top-0 h-full w-1.5 rounded-l-xl bg-primary\" aria-hidden=\"true\" />\r\n        <div className=\"flex gap-3 items-start\">\r\n          <div className=\"p-2 rounded-full bg-background\">\r\n            <Info className=\"h-6 w-6 text-primary\" aria-hidden=\"true\" />\r\n          </div>\r\n          <div className=\"space-y-0.5\">\r\n            <h3 className=\"text-sm font-medium\">New device sign-in</h3>\r\n            <p className=\"text-[13px] text-muted-foreground\">If this wasn&rsquo;t you, secure your account now.</p>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  )\r\n}\r\n",
+      "path": "/components/workable/alert/alert-left-accent.tsx",
+      "target": "/components/workable/alert-left-accent.tsx"
+    }
+  ]
+}

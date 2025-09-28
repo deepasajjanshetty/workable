@@ -1,0 +1,18 @@
+{
+  "name": "alert-compact",
+  "type": "registry:component",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "alert"
+  ],
+  "files": [
+    {
+      "type": "registry:component",
+      "content": "import { Info } from \"lucide-react\"\r\n\r\nexport default function AlertCompact() {\r\n  return (\r\n    <div className=\"w-full max-w-xl mx-auto\">\r\n      <div role=\"status\" className=\"relative bg-card text-card-foreground border border-border rounded-lg p-3\">\r\n        <div className=\"flex gap-2 items-center\">\r\n          <Info className=\"h-4 w-4 text-muted-foreground\" aria-hidden=\"true\" />\r\n          <p className=\"text-xs text-muted-foreground\">Maintenance window scheduled for Sunday 2:00-3:00 AM UTC.</p>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  )\r\n}\r\n",
+      "path": "/components/workable/alert/alert-compact.tsx",
+      "target": "/components/workable/alert-compact.tsx"
+    }
+  ]
+}
