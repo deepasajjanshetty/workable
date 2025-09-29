@@ -12,7 +12,7 @@
       "type": "registry:component",
       "content": "\"use client\"\r\n\r\nimport { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from \"@/components/ui/accordion\"\r\nimport { FAQ_ITEMS } from \"./faq-data\"\r\n\r\nexport default function FAQVariant08() {\r\n  return (\r\n    <section className=\"py-6\">\r\n      <h2 className=\"text-lg font-semibold text-foreground mb-2\">FAQ (Compact)</h2>\r\n      <Accordion type=\"single\" collapsible className=\"space-y-2\">\r\n        {FAQ_ITEMS.map((faq) => (\r\n          <AccordionItem key={faq.id} value={faq.id} className=\"rounded border border-border bg-card\">\r\n            <AccordionTrigger className=\"px-3 py-2 text-sm\">{faq.question}</AccordionTrigger>\r\n            <AccordionContent className=\"px-3 pb-3 text-sm text-muted-foreground\">{faq.answer}</AccordionContent>\r\n          </AccordionItem>\r\n        ))}\r\n      </Accordion>\r\n    </section>\r\n  )\r\n}\r\n",
       "path": "faq-variant-08.tsx",
-      "target": "/components/workable/faq-variant-08.tsx"
+      "target": "components/workable/faq-variant-08.tsx"
     }
   ]
 }

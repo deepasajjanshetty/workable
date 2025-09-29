@@ -12,7 +12,7 @@
       "type": "registry:component",
       "content": "import { Info } from \"lucide-react\"\r\n\r\nexport default function AlertWithIconBg() {\r\n  return (\r\n    <div className=\"w-full max-w-xl mx-auto\">\r\n      <div role=\"status\" className=\"relative bg-card text-card-foreground border border-border rounded-xl p-4\">\r\n        <div className=\"flex gap-3 items-start\">\r\n          <div className=\"p-2 rounded-full bg-accent\">\r\n            <Info className=\"h-6 w-6 text-accent-foreground\" aria-hidden=\"true\" />\r\n            <span className=\"sr-only\">Information</span>\r\n          </div>\r\n          <div className=\"space-y-0.5\">\r\n            <h3 className=\"text-sm font-medium\">Sandbox mode</h3>\r\n            <p className=\"text-[13px] text-muted-foreground\">\r\n              Test transactions are enabled and won&rsquo;t charge real cards.\r\n            </p>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  )\r\n}\r\n",
       "path": "alert-with-icon-bg.tsx",
-      "target": "/components/workable/alert-with-icon-bg.tsx"
+      "target": "components/workable/alert-with-icon-bg.tsx"
     }
   ]
 }

@@ -12,7 +12,7 @@
       "type": "registry:component",
       "content": "import { XCircle } from \"lucide-react\"\r\n\r\nexport default function AlertError() {\r\n  return (\r\n    <div className=\"w-full max-w-xl mx-auto\">\r\n      <div\r\n        role=\"alert\"\r\n        aria-live=\"assertive\"\r\n        className=\"relative bg-card text-card-foreground border border-destructive/40 rounded-xl p-4 shadow-[0_1px_6px_0_rgba(0,0,0,0.05)]\"\r\n      >\r\n        <div className=\"flex gap-3 items-start\">\r\n          <div className=\"p-2 rounded-full bg-background\">\r\n            <XCircle className=\"h-6 w-6 text-destructive\" aria-hidden=\"true\" />\r\n            <span className=\"sr-only\">Error</span>\r\n          </div>\r\n          <div className=\"space-y-0.5\">\r\n            <h3 className=\"text-sm font-medium\">Something went wrong</h3>\r\n            <p className=\"text-[13px] text-muted-foreground\">\r\n              We couldn&rsquo;t process your request. Try again later.\r\n            </p>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  )\r\n}\r\n",
       "path": "alert-error.tsx",
-      "target": "/components/workable/alert-error.tsx"
+      "target": "components/workable/alert-error.tsx"
     }
   ]
 }

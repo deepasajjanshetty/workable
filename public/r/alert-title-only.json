@@ -12,7 +12,7 @@
       "type": "registry:component",
       "content": "import { Alert, AlertDescription } from \"@/components/ui/alert\";\r\nimport { Info } from \"lucide-react\";\r\n\r\nexport default function AlertTitleOnly() {\r\n    return (\r\n        <Alert>\r\n            <Info className=\"h-4 w-4\" />\r\n            <AlertDescription>\r\n                <strong>Important:</strong> This alert only shows a title with no additional description.\r\n            </AlertDescription>\r\n        </Alert>\r\n    );\r\n}\r\n",
       "path": "alert-title-only.tsx",
-      "target": "/components/workable/alert-title-only.tsx"
+      "target": "components/workable/alert-title-only.tsx"
     }
   ]
 }

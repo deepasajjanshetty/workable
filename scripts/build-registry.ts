@@ -62,13 +62,13 @@ const getComponentFiles = async (files: File[], registryType: string) => {
         const getTargetPath = (type: string) => {
             switch (type) {
                 case "registry:hook":
-                    return `/hooks/${fileName}`;
+                    return `hooks/${fileName}`;
                 case "registry:lib":
-                    return `/lib/${fileName}`;
+                    return `lib/${fileName}`;
                 case "registry:block":
-                    return `/blocks/${fileName}`;
+                    return `blocks/${fileName}`;
                 default:
-                    return `/components/workable/${fileName}`;
+                    return `components/workable/${fileName}`;
             }
         };
         

@@ -12,7 +12,7 @@
       "type": "registry:component",
       "content": "\"use client\"\r\n\r\nimport { Fragment } from \"react\"\r\nimport { FAQ_ITEMS, CATEGORIES, type FAQCategory } from \"./faq-data\"\r\nimport { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from \"@/components/ui/accordion\"\r\n\r\nconst byCategory = (cat: FAQCategory) => FAQ_ITEMS.filter((i) => i.category === cat)\r\n\r\nexport default function FAQVariant04() {\r\n  const cats = Object.keys(CATEGORIES) as FAQCategory[]\r\n  return (\r\n    <section className=\"py-10 space-y-8\">\r\n      <h2 className=\"text-2xl font-semibold text-foreground\">FAQ by Category</h2>\r\n      {cats.map((cat) => (\r\n        <Fragment key={cat}>\r\n          <h3 className=\"text-lg font-medium text-foreground\">{CATEGORIES[cat].label}</h3>\r\n          <Accordion type=\"single\" collapsible className=\"space-y-3\">\r\n            {byCategory(cat).map((faq) => (\r\n              <AccordionItem key={faq.id} value={faq.id} className=\"rounded-md border border-border bg-card\">\r\n                <AccordionTrigger className=\"px-4 py-3\">{faq.question}</AccordionTrigger>\r\n                <AccordionContent className=\"px-4 pb-4 text-muted-foreground\">{faq.answer}</AccordionContent>\r\n              </AccordionItem>\r\n            ))}\r\n          </Accordion>\r\n        </Fragment>\r\n      ))}\r\n    </section>\r\n  )\r\n}\r\n",
       "path": "faq-variant-04.tsx",
-      "target": "/components/workable/faq-variant-04.tsx"
+      "target": "components/workable/faq-variant-04.tsx"
     }
   ]
 }

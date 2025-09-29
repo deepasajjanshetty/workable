@@ -12,7 +12,7 @@
       "type": "registry:component",
       "content": "import { Info } from \"lucide-react\"\r\n\r\nexport default function AlertInline() {\r\n  return (\r\n    <p className=\"w-full max-w-xl mx-auto text-[13px] text-muted-foreground\">\r\n      <span className=\"inline-flex items-center gap-1.5 align-top bg-muted px-2 py-1 rounded-md border border-border\">\r\n        <Info className=\"h-3.5 w-3.5 text-muted-foreground\" aria-hidden=\"true\" />\r\n        <span className=\"text-foreground\">Preview mode</span>\r\n      </span>{\" \"}\r\n      Changes you make won&rsquo;t be saved permanently.\r\n    </p>\r\n  )\r\n}\r\n",
       "path": "alert-inline.tsx",
-      "target": "/components/workable/alert-inline.tsx"
+      "target": "components/workable/alert-inline.tsx"
     }
   ]
 }

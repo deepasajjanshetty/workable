@@ -12,7 +12,7 @@
       "type": "registry:component",
       "content": "import { Alert, AlertDescription } from \"@/components/ui/alert\";\r\nimport { Info } from \"lucide-react\";\r\n\r\nexport default function AlertSubtle() {\r\n    return (\r\n        <Alert className=\"border-blue-200 bg-blue-50 text-blue-800 dark:border-blue-800 dark:bg-blue-950 dark:text-blue-200\">\r\n            <Info className=\"h-4 w-4\" />\r\n            <AlertDescription>\r\n                This is a subtle alert with a soft blue background and border.\r\n            </AlertDescription>\r\n        </Alert>\r\n    );\r\n}\r\n",
       "path": "alert-subtle.tsx",
-      "target": "/components/workable/alert-subtle.tsx"
+      "target": "components/workable/alert-subtle.tsx"
     }
   ]
 }
