@@ -160,7 +160,7 @@ export default function HeroGeometric({
                         className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.03] border border-white/[0.08] mb-8 md:mb-12"
                     >
                         <Image
-                            src="https://ui.workable.dev/logo.svg"
+                            src="https://workableui.vercel.app/logo.svg"
                             alt="Workable"
                             width={20}
                             height={20}
